@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ddd;
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 15px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li {
+    padding: 15px;
+}
+
+footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo > img {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.btn {
+    max-width: 150px;
+    width: 100%;
+    margin: 15px 0;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #f1c40f;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.grid {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+}
+
+.icon i {
+    color: green;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+.product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.product h2,
+.product p {
+    margin-top: 15px;
+}
+
+.subscription {
+    background-color: #ddd;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+}
+
+#hero h2 {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+#form #email {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#form .btn {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+#feature {
+    margin-top: 30px;
+}
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+@media (min-width: 800px) {
+    .product {
+        width: 33.33%;
+        margin: 10px;
+    }
+
+    #pricing {
+        flex-direction: row;
+    }
+}
